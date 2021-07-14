@@ -7,4 +7,6 @@ where city in ( select city from customers)
 -----------------------------------------------------
 select * 
     from salespeople 
-where sname < any ( select cname from customers )
+where snum < any ( select cnum from customers )
+
+
